@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup page</title>
+    <script src="validate.js"></script>
+  </head>
+  <body>
+    <h1>please signup here!</h1>
+    <form action="success.html" onsubmit="return validate()">
+      <label>Enter username:</label>
+      <input type="text" name="username" id="user" />
+      <br />
+      <br />
+      <label>Enter password:</label>
+      <input type="password" name="password" id="pswd" />
+      <br />
+      <br />
+      <label>confirm password:</label>
+      <input type="password" name="passwordconfrm" id="conpswd" />
+      <br />
+      <br />
+      <lable>mobile number:</lable>
+      <input type="tel" name="number" id="number" />
+      <br />
+      <br />
+      <label for="">Enter email:</label>
+      <input type="text" name="email" id="email" />
+      <br /><br />
+      <label>select gender:</label>
+      <input type="radio" name="gender" id="gender" />male
+      <input type="radio" name="gender" id="gender" />female <br /><br />
+      <label for="">Enter DOB:</label>
+      <input type="date" name="dob" id="date" />
+      <br /><br />
+      <label for="">Enter Address:</label>
+      <textarea name="address" rows="3" id="address"></textarea>
+      <br /><br />
+      <label for="">Qualification:</label>
+      <select name="" id="">
+        <option value="">select</option>
+        <option value="">10th</option>
+        <option value="">inter</option>
+        <option value="">degree</option>
+        <option value="">btech</option>
+      </select>
+      <br /><br />
+      <label for="">skills:</label>
+      <select name="" id="" multiple size="4">
+        <option value="">java</option>
+        <option value="">python</option>
+        <option value="">html</option>
+        <option value="">javascript</option>
+        <option value="">css</option>
+      </select>
+      <br /><br />
+      <label for="">preffered shift:</label>
+      <input type="checkbox" />day shift <input type="checkbox" />night shift
+      <br /><br />
+      <label for="">upload resume:</label>
+      <input type="file" />
+      <br /><br />
+
+      <input type="submit" value="sign up" />
+    </form>
+  </body>
+</html>
